@@ -13,9 +13,11 @@ public class Program2 {
 		System.out.println("=== TEST 1: department insert ===");
         
         System.out.println("=== TEST 2: department update ===");
-        Department newDepartment = new Department(7, "Music");
-        departmentDao.update(newDepartment);
-        System.out.println("Update finished!");
+        
+        System.out.println("=== TEST 3: department delete ===");
+        departmentDao.deleteById(8);
+        departmentDao.deleteById(9);
+        System.out.println("delete finished");
 	}
 
 }
